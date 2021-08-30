@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../assets/bg.jpg);
+    min-height: 100vh;;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playground{
+    position: relative;
+    background: linear-gradient(#7070ad,white);
+    height: 85vmin;
+    width: 92vmin;
+    left: 50vmin;
+    top: -4vmin;
+    border: 2px solid white;
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(30,1fr);
+}
+
+.food{
+    background:linear-gradient(green,rgb(255, 251, 10));
+    border: 1px solid rgb(43, 26, 1);
+    border-radius: 2px;
+
+}
+
+.head{
+    background-color: red;
+    border-radius: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
+.snake{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    border: 1px solid rgb(248, 248, 248);
+}
+
+#btn{
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    height: 49px;
+    width: 128px;
+    border: 2px solid white;
+    border-radius: 25%;
+    color: green;
+    bottom: 15px;
+    right: 50%;
+    cursor: pointer;
+    outline: none;
+    background-color: greenyellow;
+}
+
+
+.scoreBoard{
+    border: 2px dotted white;
+    left: 65vmin;
+    top: 10vmin;
+    position: absolute;
+    height: 15vmin;
+    width: 15vmax;
+
+}
+.instructions{
+    border: 2px dotted white;
+    left: 65vmin;
+    top: 30vmin;
+    position: absolute;
+    height: 18vmin;
+    width: 15vmax;
+}
+.center{
+    text-align: center;
+    padding: 5px;
+}
+.instructions p{
+    color: white;
+    font-size: 18px;
+    padding-left: 8px;
+}
+#score,#HighScore{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+}
